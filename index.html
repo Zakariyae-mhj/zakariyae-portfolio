@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Zakariyae</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="header">
+      <img src="zakariyae.jpg" class="avatar" alt="Zakariyae" onerror="this.style.display='none'">
+      <div class="title">
+        <h1 class="h1">Elmahjoubi Zakariyae</h1>
+        <div class="sub">Doctorant en Géographie — SIG & Télédétection</div>
+        <div class="meta">
+          <span class="pill">📍 Oujda, Maroc</span>
+          <span class="pill">✉ zakariyae.elmahjoubi.d23@ump.ac.ma</span>
+          <span class="pill">📞 +212 762 785 869</span>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="cv.pdf" target="_blank">📄 CV</a>
+          <a class="btn ghost" href="hydrologie.html">💧 HYDROLOGIE</a>
+          <a class="btn ghost" href="risques.html">⚠️ RISQUES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2 class="h2">Bienvenue</h2>
+      <p class="small">Explorez mes projets en télédétection (NDVI, MBR, BSI) et l'analyse des risques naturels (RUSLE). Cliquez sur une section pour voir les galeries.</p>
+      <div class="nav" style="margin-top:12px">
+        <a href="hydrologie.html">HYDROLOGIE</a>
+        <a href="risques.html">RISQUES</a>
+      </div>
+    </div>
+
+    <div class="footer">© <span id="y"></span> — Zakariyae</div>
+  </div>
+</div>
+<script>document.getElementById('y').innerText=new Date().getFullYear();</script>
+</body>
+</html>

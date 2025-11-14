@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RUSLE — PROJET1</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="container"><div class="card">
+  <h2 class="h2">RUSLE — PROJET1</h2>
+  <div class="nav"><a href="risques.html">Retour</a><a href="index.html">Accueil</a></div>
+
+  <div class="panel">
+    <p class="small">Cartes RUSLE — images ci-dessous.</p>
+    <div id="gallery4" class="gallery"></div>
+  </div>
+
+  <div class="footer">© <span id="y7"></span></div>
+</div></div>
+
+<script>
+document.getElementById('y7').innerText=new Date().getFullYear();
+const images = [
+"PROJET1 TELEDETECTION ZONE D’ETUDE RUSLE.jpg",
+"PROJET1 TELEDETECTION RFACTOR RUSLE.jpg",
+"PROJET1 TELEDETECTION KFACTOR RUSLE.jpg",
+"PROJET1 TELEDETECTION LSFACTOR RUSLE.jpg",
+"PROJET1 TELEDETECTION SLOPE RUSLE.jpg",
+"PROJET1 TELEDETECTION CFACTOR RUSLE.jpg",
+"PROJET1 TELEDETECTION PFACTOR RUSLE.jpg",
+"PROJET1 TELEDETECTION METHODE RUSLE.jpg"
+];
+const g=document.getElementById('gallery4');
+images.forEach(name=>{
+  const src=encodeURI(name);
+  const d=document.createElement('div'); const img=document.createElement('img');
+  img.src=src; img.alt=name; img.loading='lazy'; img.onclick=()=>openLightbox(src);
+  d.appendChild(img);
+  const cap=document.createElement('div'); cap.className='img-caption'; cap.innerText=name; d.appendChild(cap);
+  g.appendChild(d);
+});
+function openLightbox(src){const o=document.createElement('div');o.style='position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;z-index:9999';const i=document.createElement('img');i.src=src;i.style='max-width:92%;max-height:92%;border-radius:8px';o.appendChild(i);o.onclick=()=>document.body.removeChild(o);document.body.appendChild(o);}
+</script>
+</body>
+</html>

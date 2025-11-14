@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hydrologie — Zakariyae</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="container"><div class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <h2 class="h2">HYDROLOGIE</h2>
+    <div class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="risques.html">Risques</a>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="project-card">
+      <strong>NDVI — PROJET1</strong>
+      <p class="small">Séries temporelles NDVI (1990 → 2024)</p>
+      <div style="margin-top:8px"><a class="pill" href="ndvi-projet1.html">Voir la galerie NDVI</a></div>
+    </div>
+
+    <div class="project-card">
+      <strong>MBR — PROJET2</strong>
+      <p class="small">Séries MBR (2019 → 2024)</p>
+      <div style="margin-top:8px"><a class="pill" href="mbr-projet2.html">Voir la galerie MBR</a></div>
+    </div>
+
+    <div class="project-card">
+      <strong>BSI — PROJET3</strong>
+      <p class="small">Séries BSI (2019 → 2024)</p>
+      <div style="margin-top:8px"><a class="pill" href="bsi-projet3.html">Voir la galerie BSI</a></div>
+    </div>
+  </div>
+
+  <div class="footer">© <span id="y2"></span> — Hydrologie</div>
+</div></div>
+<script>document.getElementById('y2').innerText=new Date().getFullYear();</script>
+</body>
+</html>
